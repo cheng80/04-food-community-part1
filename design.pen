@@ -4080,6 +4080,141 @@
       "children": [
         {
           "type": "frame",
+          "id": "B6coA",
+          "name": "Row / display-lg",
+          "width": "fill_container",
+          "stroke": "$color-border-default",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 32,
+          "padding": [
+            20,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "eZ0h6",
+              "name": "Spec / display-lg",
+              "fill": "$color-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 300,
+              "content": "display-lg\nsize-800 36px · weight-bold 700 · line-height-tight 1.2 · letter-spacing -2% (-0.72px)",
+              "lineHeight": "$font-line-height-normal",
+              "fontFamily": "$font-family",
+              "fontSize": "$font-size-100",
+              "fontWeight": "$font-weight-regular",
+              "letterSpacing": -0.24
+            },
+            {
+              "type": "text",
+              "id": "z4aYIq",
+              "name": "display-lg",
+              "reusable": true,
+              "fill": "$color-text-default",
+              "content": "이번 주말엔 여기 어때요? 숨은맛집 Aa 123",
+              "lineHeight": "$font-line-height-tight",
+              "fontFamily": "$font-family",
+              "fontSize": "$font-size-800",
+              "fontWeight": "$font-weight-bold",
+              "letterSpacing": -0.72
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "A7G57",
+          "name": "Row / display-md",
+          "width": "fill_container",
+          "stroke": "$color-border-default",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 32,
+          "padding": [
+            20,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "zieRc",
+              "name": "Spec / display-md",
+              "fill": "$color-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 300,
+              "content": "display-md\nsize-700 32px · weight-bold 700 · line-height-tight 1.2 · letter-spacing -2% (-0.64px)",
+              "lineHeight": "$font-line-height-normal",
+              "fontFamily": "$font-family",
+              "fontSize": "$font-size-100",
+              "fontWeight": "$font-weight-regular",
+              "letterSpacing": -0.24
+            },
+            {
+              "type": "text",
+              "id": "jweGx",
+              "name": "display-md",
+              "reusable": true,
+              "fill": "$color-text-default",
+              "content": "이번 주말엔 여기 어때요? 숨은맛집 Aa 123",
+              "lineHeight": "$font-line-height-tight",
+              "fontFamily": "$font-family",
+              "fontSize": "$font-size-700",
+              "fontWeight": "$font-weight-bold",
+              "letterSpacing": -0.64
+            }
+          ]
+        },
+        {
+          "type": "frame",
+          "id": "Cy1CT",
+          "name": "Row / display-sm",
+          "width": "fill_container",
+          "stroke": "$color-border-default",
+          "strokeWidth": {
+            "bottom": 1
+          },
+          "gap": 32,
+          "padding": [
+            20,
+            0
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "text",
+              "id": "YnPZE",
+              "name": "Spec / display-sm",
+              "fill": "$color-text-secondary",
+              "textGrowth": "fixed-width",
+              "width": 300,
+              "content": "display-sm\nsize-600 28px · weight-bold 700 · line-height-tight 1.2 · letter-spacing -2% (-0.56px)",
+              "lineHeight": "$font-line-height-normal",
+              "fontFamily": "$font-family",
+              "fontSize": "$font-size-100",
+              "fontWeight": "$font-weight-regular",
+              "letterSpacing": -0.24
+            },
+            {
+              "type": "text",
+              "id": "Z3ZC6r",
+              "name": "display-sm",
+              "reusable": true,
+              "fill": "$color-text-default",
+              "content": "이번 주말엔 여기 어때요? 숨은맛집 Aa 123",
+              "lineHeight": "$font-line-height-tight",
+              "fontFamily": "$font-family",
+              "fontSize": "$font-size-600",
+              "fontWeight": "$font-weight-bold",
+              "letterSpacing": -0.56
+            }
+          ]
+        },
+        {
+          "type": "frame",
           "id": "nJ0qN",
           "name": "Row / heading-lg",
           "width": "fill_container",
@@ -23450,11 +23585,11 @@
     },
     "color-text-tertiary": {
       "type": "color",
-      "value": "$color-neutral-400"
+      "value": "$color-neutral-600"
     },
     "color-text-placeholder": {
       "type": "color",
-      "value": "$color-neutral-400"
+      "value": "$color-neutral-600"
     },
     "color-text-content": {
       "type": "color",
@@ -23683,6 +23818,22 @@
     "color-alpha-black-0": {
       "type": "color",
       "value": "#00000000"
+    },
+    "font-size-900": {
+      "type": "number",
+      "value": 40
+    },
+    "font-size-800": {
+      "type": "number",
+      "value": 36
+    },
+    "font-size-700": {
+      "type": "number",
+      "value": 32
+    },
+    "font-size-600": {
+      "type": "number",
+      "value": 28
     }
   },
   "fileToken": "1af49370-f919-438a-a6e4-9682d1610077",
