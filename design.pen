@@ -22619,7 +22619,7 @@
               "stroke": "$color-border-default",
               "strokeWidth": 1,
               "padding": [
-                4,
+                "$spacing-8",
                 "$spacing-12"
               ],
               "children": [
@@ -22646,7 +22646,7 @@
               "gap": 10,
               "padding": [
                 0,
-                12
+                "$spacing-12"
               ],
               "justifyContent": "center",
               "alignItems": "center",
