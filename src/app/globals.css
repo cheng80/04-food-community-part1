@@ -12,6 +12,9 @@
 @theme static {
   --font-sans: "Pretendard Variable", Pretendard, -apple-system, BlinkMacSystemFont, system-ui, sans-serif;
 
+  --font-google: var(--font-roboto), "Roboto", var(--font-sans);
+
+  --font-weight-medium: 500;
   --font-weight-bold: 700;
   --font-weight-semibold: 600;
   --font-weight-regular: 400;
@@ -120,6 +123,14 @@
 
   --color-shadow-brand: var(--color-alpha-brand-33);
   --color-shadow-default: var(--color-alpha-black-20);
+
+  /* Google 로그인 버튼 브랜드 가이드 색 */
+  --color-google-surface: var(--color-neutral-50);
+  --color-google-border: #747775;
+  --color-google-text: #1f1f1f;
+
+  /* layout — max-w-page */
+  --container-page: 1280px;
 }
 
 :root {

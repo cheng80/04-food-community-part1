@@ -19,3 +19,12 @@ export const Ghost: Story = {
 };
 export const CircleBrand: Story = { args: { variant: "circle-brand" } };
 export const CircleNeutral: Story = { args: { variant: "circle-neutral" } };
+/** 05 마이 페이지 · Post Actions (20px, secondary / error) */
+export const PostActions: Story = {
+  render: () => (
+    <div className="flex">
+      <IconButton icon="edit" label="수정" iconSize={20} iconClassName="text-icon-secondary" />
+      <IconButton icon="delete" label="삭제" iconSize={20} iconClassName="text-icon-error" />
+    </div>
+  ),
+};

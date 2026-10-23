@@ -5,7 +5,7 @@ import { FileItem, FileUploader } from "./FileUploader";
 const meta = {
   title: "UI/File Uploader",
   component: FileUploader,
-  args: { onFiles: fn() },
+  args: { onFiles: fn(), className: "w-[210px]" },
 } satisfies Meta<typeof FileUploader>;
 
 export default meta;

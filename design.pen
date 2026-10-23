@@ -82,7 +82,8 @@
                   "ref": "TBwmE",
                   "name": "정확히 입력해 주세요",
                   "content": "",
-                  "fill": "$color-text-secondary"
+                  "fill": "$color-text-secondary",
+                  "enabled": false
                 }
               }
             }
@@ -168,6 +169,7 @@
           "name": "Restaurant List",
           "width": "fill_container",
           "layout": "vertical",
+          "gap": "$spacing-12",
           "padding": [
             0,
             "$spacing-20"
@@ -377,7 +379,7 @@
           "ref": "Df735515a5",
           "name": "Write FAB",
           "layoutPosition": "absolute",
-          "x": 203,
+          "x": 170,
           "y": 980,
           "descendants": {
             "D9d8336684": {
@@ -418,7 +420,7 @@
           "fill": {
             "type": "image",
             "enabled": true,
-            "url": "https://images.unsplash.com/photo-1763994685090-c0927ff195d1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMjMyNTV8&ixlib=rb-4.1.0&q=80&w=1080",
+            "url": "https://images.unsplash.com/photo-1790703290407-c9b1495fab1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=1080",
             "mode": "cover"
           },
           "layout": "vertical",
@@ -833,7 +835,9 @@
                   "ref": "DI74m",
                   "name": "저장에 실패했습니다",
                   "content": "필수 항목 3개를 확인해 주세요\n빨간색으로 표시된 항목을 채우면 등록할 수 있어요.",
-                  "fill": "$color-text-inverse"
+                  "fill": "$color-text-inverse",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container"
                 }
               }
             }
@@ -915,7 +919,8 @@
                   "ref": "TBwmE",
                   "name": "정확히 입력해 주세요",
                   "content": "",
-                  "fill": "$color-text-secondary"
+                  "fill": "$color-text-secondary",
+                  "enabled": false
                 }
               }
             },
@@ -11118,7 +11123,7 @@
                       "type": "frame",
                       "id": "D3182d3373",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11193,7 +11198,7 @@
                       "type": "frame",
                       "id": "Db77a9a53d",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11268,7 +11273,7 @@
                       "type": "frame",
                       "id": "D429dfc8b8",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -11343,7 +11348,7 @@
                       "type": "frame",
                       "id": "Daa70b9960",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11442,7 +11447,7 @@
                       "type": "frame",
                       "id": "D24698f0ae",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11517,7 +11522,7 @@
                       "type": "frame",
                       "id": "Dc17d1ea1b",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11592,7 +11597,7 @@
                       "type": "frame",
                       "id": "D06a6efb08",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -11667,7 +11672,7 @@
                       "type": "frame",
                       "id": "D9daa85a86",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11766,7 +11771,7 @@
                       "type": "frame",
                       "id": "Dbfb39a683",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11841,7 +11846,7 @@
                       "type": "frame",
                       "id": "Da31fcf387",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -11916,7 +11921,7 @@
                       "type": "frame",
                       "id": "D8528eaeca",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -11991,7 +11996,7 @@
                       "type": "frame",
                       "id": "De80d025b6",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12090,7 +12095,7 @@
                       "type": "frame",
                       "id": "Dc2b74497b",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12165,7 +12170,7 @@
                       "type": "frame",
                       "id": "D25a00af02",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12240,7 +12245,7 @@
                       "type": "frame",
                       "id": "D54ef32895",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -12315,7 +12320,7 @@
                       "type": "frame",
                       "id": "De3dcf4658",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12414,7 +12419,7 @@
                       "type": "frame",
                       "id": "D3dad2b0f1",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12489,7 +12494,7 @@
                       "type": "frame",
                       "id": "D4a84cbf4e",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12564,7 +12569,7 @@
                       "type": "frame",
                       "id": "Db08f2beaf",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -12639,7 +12644,7 @@
                       "type": "frame",
                       "id": "D50672bb11",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12738,7 +12743,7 @@
                       "type": "frame",
                       "id": "Dd93850750",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12813,7 +12818,7 @@
                       "type": "frame",
                       "id": "Db8068687e",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -12888,7 +12893,7 @@
                       "type": "frame",
                       "id": "D8d6171bd1",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -12963,7 +12968,7 @@
                       "type": "frame",
                       "id": "D6fc1ff3f7",
                       "name": "입력 영역",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -13156,6 +13161,7 @@
                   "id": "Df7e1f77f0",
                   "name": "textarea/default",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 6,
                   "children": [
@@ -13172,7 +13178,7 @@
                       "id": "D059130cb7",
                       "name": "3줄 입력 영역",
                       "clip": true,
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 78,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -13195,7 +13201,7 @@
                       "type": "frame",
                       "id": "D63d4c3c10",
                       "name": "도움말과 글자수",
-                      "width": 220,
+                      "width": "fill_container",
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -13237,6 +13243,7 @@
                   "id": "Db82340efb",
                   "name": "textarea/focused",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 6,
                   "children": [
@@ -13253,7 +13260,7 @@
                       "id": "Ddd12fec4a",
                       "name": "3줄 입력 영역",
                       "clip": true,
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 78,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -13276,7 +13283,7 @@
                       "type": "frame",
                       "id": "D4d4613401",
                       "name": "도움말과 글자수",
-                      "width": 220,
+                      "width": "fill_container",
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -13318,6 +13325,7 @@
                   "id": "D4fe0e526a",
                   "name": "textarea/disabled",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 6,
                   "children": [
@@ -13334,7 +13342,7 @@
                       "id": "D0ff8d2666",
                       "name": "3줄 입력 영역",
                       "clip": true,
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 78,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -13357,7 +13365,7 @@
                       "type": "frame",
                       "id": "D6cce4178f",
                       "name": "도움말과 글자수",
-                      "width": 220,
+                      "width": "fill_container",
                       "justifyContent": "space_between",
                       "children": [
                         {
@@ -13399,6 +13407,7 @@
                   "id": "D6f992ef74",
                   "name": "textarea/error",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 6,
                   "children": [
@@ -13415,7 +13424,7 @@
                       "id": "Dcaf0d9e14",
                       "name": "3줄 입력 영역",
                       "clip": true,
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 78,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -13438,7 +13447,7 @@
                       "type": "frame",
                       "id": "Dc12430ce6",
                       "name": "도움말과 글자수",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "layout": "vertical",
                       "gap": "$spacing-8",
@@ -13452,7 +13461,7 @@
                           "content": "내용은 필수입니다",
                           "fill": "$color-text-error",
                           "textGrowth": "fixed-width",
-                          "width": 220
+                          "width": "fill_container"
                         },
                         {
                           "id": "D6c77d6507",
@@ -13462,7 +13471,7 @@
                           "content": "0/500",
                           "fill": "$color-text-secondary",
                           "textGrowth": "fixed-width",
-                          "width": 220
+                          "width": "fill_container"
                         }
                       ]
                     }
@@ -15945,6 +15954,7 @@
                   "id": "Db8d7d70a6",
                   "name": "select/default/sm",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -15960,7 +15970,7 @@
                       "type": "frame",
                       "id": "Db6a7b696b",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16019,6 +16029,7 @@
                   "id": "D226b73b3a",
                   "name": "select/focused/sm",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16034,7 +16045,7 @@
                       "type": "frame",
                       "id": "D966d321fc",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16076,7 +16087,7 @@
                       "type": "frame",
                       "id": "F7c3d0e981",
                       "name": "열린 옵션 패널",
-                      "width": 220,
+                      "width": "fill_container",
                       "fill": "$color-background-default",
                       "stroke": "$color-border-default",
                       "strokeWidth": 1,
@@ -16117,6 +16128,7 @@
                   "id": "D15d470c87",
                   "name": "select/disabled/sm",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16132,7 +16144,7 @@
                       "type": "frame",
                       "id": "D7bfa3445d",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -16191,6 +16203,7 @@
                   "id": "D8571e53ff",
                   "name": "select/error/sm",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16206,7 +16219,7 @@
                       "type": "frame",
                       "id": "D50d85b0b1",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 32,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16289,6 +16302,7 @@
                   "id": "D8ec01f9d7",
                   "name": "select/default/md",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16304,7 +16318,7 @@
                       "type": "frame",
                       "id": "D81e7f135d",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16363,6 +16377,7 @@
                   "id": "D35dd054ca",
                   "name": "select/focused/md",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16378,7 +16393,7 @@
                       "type": "frame",
                       "id": "Deb71f20f4",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16420,7 +16435,7 @@
                       "type": "frame",
                       "id": "F897dd881c",
                       "name": "열린 옵션 패널",
-                      "width": 220,
+                      "width": "fill_container",
                       "fill": "$color-background-default",
                       "stroke": "$color-border-default",
                       "strokeWidth": 1,
@@ -16461,6 +16476,7 @@
                   "id": "Df312ca64e",
                   "name": "select/disabled/md",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16476,7 +16492,7 @@
                       "type": "frame",
                       "id": "D3f7a7017c",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -16535,6 +16551,7 @@
                   "id": "D05aa31a8b",
                   "name": "select/error/md",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16550,7 +16567,7 @@
                       "type": "frame",
                       "id": "Dde1dcb005",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 40,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16633,6 +16650,7 @@
                   "id": "D2d0573f09",
                   "name": "select/default/lg",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16648,7 +16666,7 @@
                       "type": "frame",
                       "id": "D2a8b5ef9f",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16707,6 +16725,7 @@
                   "id": "D59e715efa",
                   "name": "select/focused/lg",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16722,7 +16741,7 @@
                       "type": "frame",
                       "id": "Dac80b334b",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -16764,7 +16783,7 @@
                       "type": "frame",
                       "id": "F8055e8cb0",
                       "name": "열린 옵션 패널",
-                      "width": 220,
+                      "width": "fill_container",
                       "fill": "$color-background-default",
                       "stroke": "$color-border-default",
                       "strokeWidth": 1,
@@ -16805,6 +16824,7 @@
                   "id": "D3ca6ab75d",
                   "name": "select/disabled/lg",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16820,7 +16840,7 @@
                       "type": "frame",
                       "id": "D7739f53ab",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 6,
@@ -16879,6 +16899,7 @@
                   "id": "D177757455",
                   "name": "select/error/lg",
                   "reusable": true,
+                  "width": 220,
                   "layout": "vertical",
                   "gap": 5,
                   "children": [
@@ -16894,7 +16915,7 @@
                       "type": "frame",
                       "id": "D13a1c8c96",
                       "name": "선택 컨트롤",
-                      "width": 220,
+                      "width": "fill_container",
                       "height": 48,
                       "fill": "$color-background-default",
                       "cornerRadius": 6,
@@ -18203,6 +18224,7 @@
                   "id": "D43f2346de",
                   "name": "file-uploader/dropzone/default",
                   "reusable": true,
+                  "width": 210,
                   "layout": "vertical",
                   "gap": 8,
                   "children": [
@@ -18226,7 +18248,7 @@
                       "type": "frame",
                       "id": "D2eae1f16f",
                       "name": "드롭존",
-                      "width": 210,
+                      "width": "fill_container",
                       "height": 88,
                       "fill": "$color-background-default",
                       "cornerRadius": 8,
@@ -18290,6 +18312,7 @@
                   "id": "D0612fdf58",
                   "name": "file-uploader/dropzone/dragover",
                   "reusable": true,
+                  "width": 210,
                   "layout": "vertical",
                   "gap": 8,
                   "children": [
@@ -18313,7 +18336,7 @@
                       "type": "frame",
                       "id": "D141636d4d",
                       "name": "드롭존",
-                      "width": 210,
+                      "width": "fill_container",
                       "height": 88,
                       "fill": "$color-background-default",
                       "cornerRadius": 8,
@@ -18371,6 +18394,7 @@
                   "id": "Db840c14b7",
                   "name": "file-uploader/dropzone/disabled",
                   "reusable": true,
+                  "width": 210,
                   "layout": "vertical",
                   "gap": 8,
                   "children": [
@@ -18394,7 +18418,7 @@
                       "type": "frame",
                       "id": "Df7ec3a64f",
                       "name": "드롭존",
-                      "width": 210,
+                      "width": "fill_container",
                       "height": 88,
                       "fill": "$color-background-disabled",
                       "cornerRadius": 8,
@@ -18452,6 +18476,7 @@
                   "id": "D827831f64",
                   "name": "file-uploader/dropzone/error",
                   "reusable": true,
+                  "width": 210,
                   "layout": "vertical",
                   "gap": 8,
                   "children": [
@@ -18475,7 +18500,7 @@
                       "type": "frame",
                       "id": "D8a8cd22a3",
                       "name": "드롭존",
-                      "width": 210,
+                      "width": "fill_container",
                       "height": 88,
                       "fill": "$color-background-default",
                       "cornerRadius": 8,
@@ -19591,7 +19616,9 @@
                       "ref": "DI74m",
                       "name": "저장되었습니다",
                       "content": "저장되었습니다",
-                      "fill": "$color-text-inverse"
+                      "fill": "$color-text-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container"
                     },
                     {
                       "type": "frame",
@@ -19680,7 +19707,9 @@
                       "ref": "DI74m",
                       "name": "저장에 실패했습니다",
                       "content": "저장에 실패했습니다",
-                      "fill": "$color-text-inverse"
+                      "fill": "$color-text-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container"
                     },
                     {
                       "type": "frame",
@@ -19769,7 +19798,9 @@
                       "ref": "DI74m",
                       "name": "새 알림이 있습니다",
                       "content": "새 알림이 있습니다",
-                      "fill": "$color-text-inverse"
+                      "fill": "$color-text-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container"
                     },
                     {
                       "type": "frame",
@@ -19858,7 +19889,9 @@
                       "ref": "DI74m",
                       "name": "입력을 확인해 주세요",
                       "content": "입력을 확인해 주세요",
-                      "fill": "$color-text-inverse"
+                      "fill": "$color-text-inverse",
+                      "textGrowth": "fixed-width",
+                      "width": "fill_container"
                     },
                     {
                       "type": "frame",
@@ -22773,9 +22806,9 @@
               "id": "mHEs3",
               "name": "Sign in with Google (Light, Rectangular)",
               "height": 40,
-              "fill": "#FFFFFF",
+              "fill": "$color-google-surface",
               "cornerRadius": 4,
-              "stroke": "#747775",
+              "stroke": "$color-google-border",
               "strokeWidth": 1,
               "strokeAlignment": "inner",
               "gap": 10,
@@ -22803,12 +22836,12 @@
                   "type": "text",
                   "id": "d2I6eE",
                   "name": "Label",
-                  "fill": "#1F1F1F",
+                  "fill": "$color-google-text",
                   "content": "Google 계정으로 로그인",
                   "lineHeight": 1.4285714285714286,
                   "fontFamily": "Roboto",
-                  "fontSize": 14,
-                  "fontWeight": "500"
+                  "fontSize": "$font-size-200",
+                  "fontWeight": "$font-weight-medium"
                 }
               ]
             },
@@ -22886,7 +22919,7 @@
               "fill": {
                 "type": "image",
                 "enabled": true,
-                "url": "https://images.unsplash.com/photo-1616656899767-e11ba3872176?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMjMyMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+                "url": "https://images.unsplash.com/photo-1658678530179-5bc957a1e315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
                 "mode": "cover"
               },
               "cornerRadius": 32,
@@ -22906,7 +22939,7 @@
                   "type": "ref",
                   "ref": "c1fNZ",
                   "name": "Nickname",
-                  "content": "구로 드라이버",
+                  "content": "주말드라이버",
                   "fill": "$color-text-default",
                   "textGrowth": "fixed-width",
                   "width": "fill_container"
@@ -22987,7 +23020,7 @@
                   "fill": "$color-icon-tertiary"
                 },
                 "D66d42ee54": {
-                  "content": "구로 드라이버",
+                  "content": "주말드라이버",
                   "fill": "$color-text-default"
                 },
                 "D4928d734a": {
@@ -23297,7 +23330,7 @@
                       "fill": {
                         "type": "image",
                         "enabled": true,
-                        "url": "https://images.unsplash.com/photo-1720499035798-e7706e507eb1?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
+                        "url": "https://images.unsplash.com/photo-1790703290407-c9b1495fab1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=400",
                         "mode": "cover"
                       },
                       "cornerRadius": 6
@@ -23315,7 +23348,7 @@
                           "type": "ref",
                           "ref": "IPFTW",
                           "name": "Post Name",
-                          "content": "대부도 바다향 해물파전",
+                          "content": "오류동 시장 잔치국수",
                           "fill": "$color-text-default",
                           "textGrowth": "fixed-width",
                           "width": "fill_container"
@@ -23325,7 +23358,7 @@
                           "type": "ref",
                           "ref": "TBwmE",
                           "name": "Post Meta",
-                          "content": "경기 안산시 단원구 · 2주 전",
+                          "content": "서울 구로구 오류동 · 6일 전",
                           "fill": "$color-text-tertiary",
                           "textGrowth": "fixed-width",
                           "width": "fill_container"
@@ -23370,6 +23403,260 @@
                       ]
                     }
                   ]
+                }
+              ]
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "type": "frame",
+      "id": "Iiex5",
+      "x": 7484,
+      "y": -898,
+      "name": "06 프로필",
+      "clip": true,
+      "width": 360,
+      "fill": "$color-background-default",
+      "layout": "vertical",
+      "children": [
+        {
+          "id": "zJnUh",
+          "type": "ref",
+          "ref": "D80d2ad27f",
+          "name": "Header",
+          "width": "fill_container",
+          "descendants": {
+            "D1b992d757": {
+              "content": "프로필"
+            },
+            "D645741c1d": {
+              "id": "LtZsV",
+              "type": "ref",
+              "ref": "gEzN9",
+              "name": "share",
+              "fill": "$color-icon-default"
+            }
+          }
+        },
+        {
+          "type": "frame",
+          "id": "EHyXQ",
+          "name": "Profile",
+          "width": "fill_container",
+          "gap": "$spacing-16",
+          "padding": [
+            "$spacing-24",
+            "$spacing-20"
+          ],
+          "alignItems": "center",
+          "children": [
+            {
+              "type": "frame",
+              "id": "l7C2n",
+              "name": "Avatar",
+              "width": 64,
+              "height": 64,
+              "fill": {
+                "type": "image",
+                "enabled": true,
+                "url": "https://images.unsplash.com/photo-1658678530179-5bc957a1e315?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&q=80&w=200",
+                "mode": "cover"
+              },
+              "cornerRadius": 32,
+              "stroke": "$color-border-default",
+              "strokeWidth": 1
+            },
+            {
+              "type": "frame",
+              "id": "zuKhF",
+              "name": "Profile Text",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$spacing-8",
+              "children": [
+                {
+                  "id": "m2xEb",
+                  "type": "ref",
+                  "ref": "c1fNZ",
+                  "name": "Nickname",
+                  "content": "주말드라이버",
+                  "fill": "$color-text-default",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container"
+                },
+                {
+                  "id": "kNUy0",
+                  "type": "ref",
+                  "ref": "DI74m",
+                  "name": "Post Count",
+                  "content": "지금까지 맛집 3곳을 공유했어요",
+                  "fill": "$color-text-secondary",
+                  "textGrowth": "fixed-width",
+                  "width": "fill_container"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "type": "rectangle",
+          "id": "J0AEd",
+          "name": "Divider",
+          "fill": "$color-background-subtle",
+          "width": "fill_container",
+          "height": 8
+        },
+        {
+          "type": "frame",
+          "id": "bH5ke",
+          "name": "Posts",
+          "width": "fill_container",
+          "layout": "vertical",
+          "gap": "$spacing-12",
+          "padding": [
+            "$spacing-24",
+            "$spacing-20",
+            "$spacing-32",
+            "$spacing-20"
+          ],
+          "children": [
+            {
+              "type": "frame",
+              "id": "x5WhR",
+              "name": "Posts Head",
+              "width": "fill_container",
+              "gap": "$spacing-8",
+              "alignItems": "center",
+              "children": [
+                {
+                  "id": "xkwKZ",
+                  "type": "ref",
+                  "ref": "IPFTW",
+                  "name": "Posts Title",
+                  "content": "작성한 글",
+                  "fill": "$color-text-default"
+                },
+                {
+                  "id": "mJrSk",
+                  "type": "ref",
+                  "ref": "D7cf58ea08",
+                  "name": "Count Badge",
+                  "descendants": {
+                    "D40346de8d": {
+                      "content": "3"
+                    }
+                  }
+                }
+              ]
+            },
+            {
+              "type": "frame",
+              "id": "vmRfY",
+              "name": "Post List",
+              "width": "fill_container",
+              "layout": "vertical",
+              "gap": "$spacing-12",
+              "children": [
+                {
+                  "id": "Pyewo",
+                  "type": "ref",
+                  "ref": "D74edf9282",
+                  "name": "Card 1",
+                  "width": "fill_container",
+                  "descendants": {
+                    "Df494183cd": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1790703290407-c9b1495fab1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMjMzMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "De1a604361": {
+                      "content": "광명 할매 손칼국수",
+                      "fill": "$color-text-default"
+                    },
+                    "Deb3096e60": {
+                      "content": "경기 광명시 광명로",
+                      "fill": "$color-text-tertiary"
+                    },
+                    "F5d28dc557": {
+                      "content": "매일 아침 직접 미는 면이 쫄깃해요. 바지락 국물 진하고 주차장 넓어요.",
+                      "fill": "$color-text-secondary"
+                    },
+                    "F03c027073": {
+                      "content": "주말드라이버 · 2시간 전",
+                      "fill": "$color-text-tertiary"
+                    }
+                  }
+                },
+                {
+                  "id": "k8zWH",
+                  "type": "ref",
+                  "ref": "D74edf9282",
+                  "name": "Card 2",
+                  "width": "fill_container",
+                  "descendants": {
+                    "Df494183cd": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1616656899767-e11ba3872176?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMjMyMjR8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "De1a604361": {
+                      "content": "궁평항 옆 작은 백반집",
+                      "fill": "$color-text-default"
+                    },
+                    "Deb3096e60": {
+                      "content": "경기 화성시 서신면",
+                      "fill": "$color-text-tertiary"
+                    },
+                    "F5d28dc557": {
+                      "content": "회센터 말고 바로 옆 백반집이 진짜예요. 반찬이 12가지 나와요.",
+                      "fill": "$color-text-secondary"
+                    },
+                    "F03c027073": {
+                      "content": "주말드라이버 · 5일 전",
+                      "fill": "$color-text-tertiary"
+                    }
+                  }
+                },
+                {
+                  "id": "cBLRb",
+                  "type": "ref",
+                  "ref": "D74edf9282",
+                  "name": "Card 3",
+                  "width": "fill_container",
+                  "descendants": {
+                    "Df494183cd": {
+                      "fill": {
+                        "type": "image",
+                        "enabled": true,
+                        "url": "https://images.unsplash.com/photo-1790703290407-c9b1495fab1b?crop=entropy&cs=tinysrgb&fit=max&fm=jpg&ixid=M3w4NDM0ODN8MHwxfHJhbmRvbXx8fHx8fHx8fDE3OTIxMjMzMTJ8&ixlib=rb-4.1.0&q=80&w=1080",
+                        "mode": "cover"
+                      }
+                    },
+                    "De1a604361": {
+                      "content": "오류동 시장 잔치국수",
+                      "fill": "$color-text-default"
+                    },
+                    "Deb3096e60": {
+                      "content": "서울 구로구 오류동",
+                      "fill": "$color-text-tertiary"
+                    },
+                    "F5d28dc557": {
+                      "content": "시장 구경하고 먹는 3,500원 잔치국수. 멸치 육수가 진해요.",
+                      "fill": "$color-text-secondary"
+                    },
+                    "F03c027073": {
+                      "content": "주말드라이버 · 6일 전",
+                      "fill": "$color-text-tertiary"
+                    }
+                  }
                 }
               ]
             }
@@ -23834,6 +24121,26 @@
     "font-size-600": {
       "type": "number",
       "value": 28
+    },
+    "color-google-surface": {
+      "type": "color",
+      "value": "$color-neutral-50"
+    },
+    "color-google-border": {
+      "type": "color",
+      "value": "#747775"
+    },
+    "color-google-text": {
+      "type": "color",
+      "value": "#1F1F1F"
+    },
+    "font-weight-medium": {
+      "type": "string",
+      "value": "500"
+    },
+    "container-page": {
+      "type": "number",
+      "value": 1280
     }
   },
   "fileToken": "1af49370-f919-438a-a6e4-9682d1610077",

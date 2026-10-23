@@ -32,6 +32,15 @@ export const Top: Story = {
   },
 };
 
+/** 01 메인 헤더 — 홈 / 내 정보 */
+export const TopHome: Story = {
+  render: () => <TopNavigation title="숨은맛집" backIcon="home" backLabel="홈" moreIcon="user" moreLabel="내 정보" />,
+  play: async ({ canvas }) => {
+    await expect(canvas.getByRole("button", { name: "홈" })).toBeVisible();
+    await expect(canvas.getByRole("button", { name: "내 정보" })).toBeVisible();
+  },
+};
+
 export const Bottom: Story = {
   render: () => <BottomDemo />,
   play: async ({ canvas, userEvent }) => {

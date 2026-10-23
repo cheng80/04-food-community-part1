@@ -36,10 +36,10 @@ export function Toast({ variant = "success", message, onClose, className }: Toas
   return (
     <div
       role={variant === "error" || variant === "warning" ? "alert" : "status"}
-      className={cx("flex min-h-12 w-[400px] max-w-full items-center gap-3 px-4", v.bg, className)}
+      className={cx("flex min-h-12 w-full items-center gap-3 px-4", v.bg, className)}
     >
       <Icon name={v.icon} size={20} className="text-icon-on-brand" />
-      <span className="body-md flex-1 text-text-inverse">{message}</span>
+      <span className="body-md flex-1 whitespace-pre-line text-text-inverse">{message}</span>
       <button
         type="button"
         aria-label="닫기"

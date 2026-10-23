@@ -12,7 +12,7 @@ export interface CardProps {
 export function Card({ title, address, description, meta, imageUrl, className }: CardProps) {
   return (
     <article
-      className={cx("flex w-[280px] flex-col gap-2 rounded-[10px] border border-border-default bg-background-default p-4", className)}
+      className={cx("flex w-full flex-col gap-2 rounded-[10px] border border-border-default bg-background-default p-4", className)}
     >
       {imageUrl ? (
         // eslint-disable-next-line @next/next/no-img-element -- 외부/업로드 이미지 URL
@@ -22,7 +22,7 @@ export function Card({ title, address, description, meta, imageUrl, className }:
       )}
       <h3 className="heading-sm text-text-default">{title}</h3>
       <p className="body-md text-text-secondary">{address}</p>
-      <p className="body-md text-text-secondary">{description}</p>
+      <p className="body-md line-clamp-2 text-text-secondary">{description}</p>
       <p className="label-md text-text-tertiary">{meta}</p>
     </article>
   );

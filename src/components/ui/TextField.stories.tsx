@@ -11,6 +11,7 @@ const meta = {
     helperText: "정확히 입력해 주세요",
     icon: "search",
     size: "md",
+    className: "w-60",
     onChange: fn(),
   },
 } satisfies Meta<typeof TextField>;

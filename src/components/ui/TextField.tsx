@@ -23,7 +23,7 @@ export function TextField({ label, helperText, errorText, icon, size = "md", dis
   const s = sizes[size];
   const message = errorText ?? helperText;
   return (
-    <div className={cx("flex w-60 flex-col gap-[5px]", className)}>
+    <div className={cx("flex w-full flex-col gap-[5px]", className)}>
       <label htmlFor={inputId} className="label-lg text-text-default">
         {label}
       </label>

@@ -1,6 +1,6 @@
 import type { ButtonHTMLAttributes } from "react";
 import { cx } from "@/lib/cx";
-import { Icon, type IconName } from "./Icon";
+import { Icon, type IconName, type IconSize } from "./Icon";
 
 const variants = {
   ghost: { box: "", icon: "text-icon-default" },
@@ -12,9 +12,21 @@ export interface IconButtonProps extends ButtonHTMLAttributes<HTMLButtonElement>
   icon: IconName;
   label: string;
   variant?: keyof typeof variants;
+  iconSize?: IconSize;
+  /** 아이콘 색 덮어쓰기 (text-icon-*) */
+  iconClassName?: string;
 }
 
-export function IconButton({ icon, label, variant = "ghost", className, type = "button", ...props }: IconButtonProps) {
+export function IconButton({
+  icon,
+  label,
+  variant = "ghost",
+  iconSize = 24,
+  iconClassName,
+  className,
+  type = "button",
+  ...props
+}: IconButtonProps) {
   const v = variants[variant];
   return (
     <button
@@ -27,7 +39,7 @@ export function IconButton({ icon, label, variant = "ghost", className, type = "
       )}
       {...props}
     >
-      <Icon name={icon} size={24} className={v.icon} />
+      <Icon name={icon} size={iconSize} className={iconClassName ?? v.icon} />
     </button>
   );
 }

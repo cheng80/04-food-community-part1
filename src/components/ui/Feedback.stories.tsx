@@ -29,7 +29,7 @@ const onClose = fn();
 
 export const Toasts: Story = {
   render: () => (
-    <div className="flex flex-col gap-3">
+    <div className="flex w-[400px] flex-col gap-3">
       <Toast variant="success" message="저장되었습니다" onClose={onClose} />
       <Toast variant="error" message="저장에 실패했습니다" onClose={onClose} />
       <Toast variant="info" message="새 알림이 있습니다" onClose={onClose} />
@@ -39,6 +39,18 @@ export const Toasts: Story = {
   play: async ({ canvas, userEvent }) => {
     await userEvent.click(canvas.getAllByRole("button", { name: "닫기" })[0]);
     await expect(onClose).toHaveBeenCalledOnce();
+  },
+};
+
+/** 03 등록 — 컨테이너 폭을 채우는 오류 배너 (여러 줄) */
+export const ErrorBanner: Story = {
+  render: () => (
+    <div className="w-[320px]">
+      <Toast variant="error" message={"필수 항목 3개를 확인해 주세요\n빨간색으로 표시된 항목을 채우면 등록할 수 있어요."} />
+    </div>
+  ),
+  play: async ({ canvas }) => {
+    await expect(canvas.getByRole("alert").getBoundingClientRect().width).toBe(320);
   },
 };
 

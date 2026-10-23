@@ -5,19 +5,35 @@ export interface TopNavigationProps {
   title: string;
   onBack?: () => void;
   onMore?: () => void;
+  backIcon?: IconName;
+  backLabel?: string;
+  moreIcon?: IconName;
+  moreLabel?: string;
   className?: string;
 }
 
-export function TopNavigation({ title, onBack, onMore, className }: TopNavigationProps) {
+/** 배경은 전체 폭, 내용은 max-w-page(1280px)까지만 */
+export function TopNavigation({
+  title,
+  onBack,
+  onMore,
+  backIcon = "arrow-left",
+  backLabel = "뒤로 가기",
+  moreIcon = "more-horizontal",
+  moreLabel = "더보기",
+  className,
+}: TopNavigationProps) {
   return (
-    <header className={cx("flex h-14 w-full items-center justify-between bg-background-default px-4", className)}>
-      <button type="button" aria-label="뒤로 가기" onClick={onBack} className="flex size-6 cursor-pointer items-center justify-center">
-        <Icon name="arrow-left" size={24} />
-      </button>
-      <h1 className="heading-sm text-text-default">{title}</h1>
-      <button type="button" aria-label="더보기" onClick={onMore} className="flex size-6 cursor-pointer items-center justify-center">
-        <Icon name="more-horizontal" size={24} />
-      </button>
+    <header className={cx("w-full bg-background-default", className)}>
+      <div className="mx-auto flex h-14 w-full max-w-page items-center justify-between px-4">
+        <button type="button" aria-label={backLabel} onClick={onBack} className="flex size-6 cursor-pointer items-center justify-center">
+          <Icon name={backIcon} size={24} />
+        </button>
+        <h1 className="heading-sm truncate px-2 text-text-default">{title}</h1>
+        <button type="button" aria-label={moreLabel} onClick={onMore} className="flex size-6 cursor-pointer items-center justify-center">
+          <Icon name={moreIcon} size={24} />
+        </button>
+      </div>
     </header>
   );
 }
@@ -43,22 +59,24 @@ const defaultBottomItems: NavItem[] = [
 
 export function BottomNavigation({ items = defaultBottomItems, activeKey, onChange, className }: BottomNavigationProps) {
   return (
-    <nav aria-label="하단 메뉴" className={cx("flex h-14 w-full bg-background-default", className)}>
-      {items.map((item) => {
-        const active = item.key === activeKey;
-        return (
-          <button
-            key={item.key}
-            type="button"
-            aria-current={active ? "page" : undefined}
-            onClick={() => onChange?.(item.key)}
-            className="flex flex-1 cursor-pointer flex-col items-center justify-center gap-0.5"
-          >
-            <Icon name={item.icon} size={24} className={active ? "text-icon-brand" : "text-icon-secondary"} />
-            <span className={cx("label-md", active ? "text-text-brand" : "text-text-secondary")}>{item.label}</span>
-          </button>
-        );
-      })}
+    <nav aria-label="하단 메뉴" className={cx("w-full bg-background-default", className)}>
+      <div className="mx-auto flex h-14 w-full max-w-page">
+        {items.map((item) => {
+          const active = item.key === activeKey;
+          return (
+            <button
+              key={item.key}
+              type="button"
+              aria-current={active ? "page" : undefined}
+              onClick={() => onChange?.(item.key)}
+              className="flex flex-1 cursor-pointer flex-col items-center justify-center gap-0.5"
+            >
+              <Icon name={item.icon} size={24} className={active ? "text-icon-brand" : "text-icon-secondary"} />
+              <span className={cx("label-md", active ? "text-text-brand" : "text-text-secondary")}>{item.label}</span>
+            </button>
+          );
+        })}
+      </div>
     </nav>
   );
 }

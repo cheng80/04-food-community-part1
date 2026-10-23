@@ -11,6 +11,7 @@ const meta = {
     placeholder: "지역을 선택하세요",
     helperText: "지역을 선택해 주세요",
     size: "md",
+    className: "w-[220px]",
     options: [
       { value: "seoul", label: "서울" },
       { value: "gyeonggi", label: "경기" },

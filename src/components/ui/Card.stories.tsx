@@ -9,6 +9,7 @@ const meta = {
     address: "경기 광명시 광명로",
     description: "방문 후기를 확인하세요.",
     meta: "주말드라이버 · 2시간 전",
+    className: "w-[280px]",
   },
 } satisfies Meta<typeof Card>;
 

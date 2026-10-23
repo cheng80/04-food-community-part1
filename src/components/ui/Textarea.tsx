@@ -6,6 +6,8 @@ export interface TextareaProps extends TextareaHTMLAttributes<HTMLTextAreaElemen
   helperText?: string;
   errorText?: string;
   maxLength?: number;
+  /** 기본값 `{length}/{maxLength}` */
+  counterText?: (length: number) => string;
 }
 
 export function Textarea({
@@ -13,6 +15,7 @@ export function Textarea({
   helperText,
   errorText,
   maxLength = 500,
+  counterText = (length) => `${length}/${maxLength}`,
   disabled,
   className,
   id,
@@ -22,10 +25,11 @@ export function Textarea({
 }: TextareaProps) {
   const autoId = useId();
   const inputId = id ?? autoId;
-  const [length, setLength] = useState(String(props.value ?? defaultValue ?? "").length);
+  const [innerLength, setLength] = useState(String(defaultValue ?? "").length);
+  const length = props.value !== undefined ? String(props.value).length : innerLength;
   const message = errorText ?? helperText;
   return (
-    <div className={cx("flex w-[220px] flex-col gap-1.5", className)}>
+    <div className={cx("flex w-full flex-col gap-1.5", className)}>
       <label htmlFor={inputId} className="label-lg text-text-default">
         {label}
       </label>
@@ -50,9 +54,7 @@ export function Textarea({
       />
       <div id={`${inputId}-message`} className={cx("flex justify-between", errorText && "flex-col gap-(--spacing-8)")}>
         <span className={cx("label-md", errorText ? "text-text-error" : "text-text-secondary")}>{message}</span>
-        <span className="label-md text-text-secondary">
-          {length}/{maxLength}
-        </span>
+        <span className="label-md text-text-secondary">{counterText(length)}</span>
       </div>
     </div>
   );

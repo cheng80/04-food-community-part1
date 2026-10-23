@@ -6,6 +6,7 @@ import { Icon } from "./Icon";
 export interface FileUploaderProps {
   label?: string;
   helperText?: string;
+  dropzoneText?: string;
   errorText?: string;
   accept?: string;
   multiple?: boolean;
@@ -19,6 +20,7 @@ export interface FileUploaderProps {
 export function FileUploader({
   label = "사진 * 0/5",
   helperText = "JPG, PNG · 10MB 이하",
+  dropzoneText = "사진을 올려 주세요",
   errorText,
   accept = "image/jpeg,image/png",
   multiple = true,
@@ -32,7 +34,7 @@ export function FileUploader({
   const emit = (list: FileList | null) => list && list.length > 0 && onFiles?.(Array.from(list));
 
   return (
-    <div className={cx("flex w-[210px] flex-col gap-2", className)}>
+    <div className={cx("flex w-full flex-col gap-2", className)}>
       <span className="label-lg text-text-default">{label}</span>
       <span className="label-md text-text-secondary">{helperText}</span>
       <div
@@ -54,8 +56,8 @@ export function FileUploader({
           errorText ? "border-border-error" : dragover ? "border-background-brand" : "border-border-default",
         )}
       >
-        <span className="body-md text-text-default">사진을 올려 주세요</span>
-        <Button variant="secondary" size="sm" disabled={disabled} onClick={() => inputRef.current?.click()}>
+        <span className="body-md text-text-default">{dropzoneText}</span>
+        <Button variant="secondary" size="sm" icon="plus" disabled={disabled} onClick={() => inputRef.current?.click()}>
           파일 선택
         </Button>
         <input

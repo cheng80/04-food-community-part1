@@ -90,3 +90,7 @@ export const Spacing: Story = {
     />
   ),
 };
+
+export const Layout: Story = {
+  render: () => <Table title="Layout" rows={byPrefix("container-").map((t) => ({ ...t, value: `${t.value} · 최대 콘텐츠 폭(max-w-page)` }))} />,
+};

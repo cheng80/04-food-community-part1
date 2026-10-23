@@ -16,5 +16,5 @@ export const resolve = (value: string): string => {
 export const alias = (value: string) => value.match(/^var\(--([\w-]+)\)$/)?.[1];
 
 export const colorPrimitives = tokens.filter((t) => /^color-(brand|neutral|yellow|red|alpha)-/.test(t.name));
-export const colorSemantics = tokens.filter((t) => /^color-(text|icon|background|border|shadow)-/.test(t.name));
+export const colorSemantics = tokens.filter((t) => /^color-(text|icon|background|border|shadow|google)-/.test(t.name));
 export const byPrefix = (prefix: string) => tokens.filter((t) => t.name.startsWith(prefix));

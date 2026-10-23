@@ -48,7 +48,7 @@ export function Select({
 
   return (
     <div
-      className={cx("flex w-[220px] flex-col gap-[5px]", className)}
+      className={cx("flex w-full flex-col gap-[5px]", className)}
       onBlur={(e) => !e.currentTarget.contains(e.relatedTarget) && setOpen(false)}
     >
       <span id={`${id}-label`} className="label-lg text-text-default">
